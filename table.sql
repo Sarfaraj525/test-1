@@ -5,6 +5,24 @@ create table student (
     age int not null,
     grade varchar(10) not null
 );
+create table parent (
+    id serial primary key,
+    name varchar(100) not null,
+    age int not null,
+    grade varchar(10) not null
+);
+
+INSERT INTO parent (name, age, grade) VALUES
+('John Doe', 40, '10th'),
+('Jane Smith', 38, '9th'),
+('Emily Johnson', 42, '11th'),
+('Michael Brown', 45, '12th'),
+('Sarah Davis', 37, '8th'),
+('David Wilson', 39, '10th'),
+('Laura Garcia', 41, '9th'),
+('James Martinez', 44, '11th'),
+('Linda Rodriguez', 36, '12th'),
+('Robert Lee', 43, '8th');
 
 INSERT INTO student (name, age, grade) VALUES
 ('Alice Johnson', 14, '9th'),
@@ -19,6 +37,7 @@ INSERT INTO student (name, age, grade) VALUES
 ('Jack Wilson', 17, '12th');
 
 select * from student;
+select * from parent;
 
 select * from student
 where id=1;
