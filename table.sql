@@ -22,3 +22,10 @@ select * from student;
 
 select * from student
 where id=1;
+
+select * from student
+where id=2;
+
+select * from student
+where id=3;
+
